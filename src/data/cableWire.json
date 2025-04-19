@@ -1,0 +1,1138 @@
+{
+  "layers": [
+    {
+      "processName": "WireDrawing",
+      "drawtype": "Drawing",
+      "subtype": "layer",
+      "outerdiameter": 3.52,
+      "drawcolour1": "copperGradient"
+    },
+
+
+
+
+
+
+
+
+
+    
+    {
+      "processName": "Stranding",
+      "drawtype": "Stranding",
+      "subtype": "Concentric",
+      "Layer": "Layer 7",
+      "wirediameter": 2.64,
+      "wirelayers": [
+        1,
+        6
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm"
+    },
+
+
+    {
+      "processName": "Stranding",
+      "drawtype": "Stranding",
+      "subtype": "Compacted",
+      "Layer": "Layer 19",
+      "wirediameter": 2.62,
+      "outerdiameter": 11.1,
+      "nowires": 19,
+      "wirelayers": [
+        1,
+        6,
+        12
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm"
+    },
+
+
+    {
+      "processName": "Stranding",
+      "drawtype": "Stranding",
+      "subtype": "",
+      "Layer": "Layer 37",
+      "wirediameter": 2.62,
+      "outerdiameter": 18.34,
+      "nowires": 37,
+      "wirelayers": [
+        1,
+        6,
+        12,
+        18
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm"
+    },
+
+
+    {
+      "processName": "Stranding",
+      "drawtype": "Stranding",
+      "subtype": "",
+      "Layer": "Layer 61",
+      "wirediameter": 2.62,
+      "outerdiameter": 23.58,
+      "nowires": 61,
+      "wirelayers": [
+        1,
+        6,
+        12,
+        18,
+        24
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm"
+    },
+
+
+    {
+      "processName": "Stranding",
+      "drawtype": "Stranding",
+      "subtype": "",
+      "Layer": "Layer 91",
+      "wirediameter": 2.62,
+      "outerdiameter": 28.82,
+      "nowires": 91,
+      "wirelayers": [
+        1,
+        6,
+        12,
+        18,
+        24,
+        30
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm"
+    },
+
+
+    {
+      "processName": "Stranding",
+      "drawtype": "Stranding",
+      "subtype": "",
+      "Layer": "Layer 127",
+      "wirediameter": 2.62,
+      "outerdiameter": 34.06,
+      "nowires": 127,
+      "wirelayers": [
+        1,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm"
+    },
+
+
+    {
+      "processName": "Stranding",
+      "drawtype": "Stranding",
+      "subtype": "",
+      "Layer": "Layer 169",
+      "wirediameter": 2.62,
+      "outerdiameter": 39.3,
+      "nowires": 169,
+      "wirelayers": [
+        1,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm"
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      "processName": "Insulating",
+      "drawtype": "Extrusion",
+      "subtype": "blank",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1,
+        6
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "thickness": 1
+    },
+
+
+    {
+      "processName": "Insulating",
+      "drawtype": "Extrusion",
+      "subtype": "filled",
+      "filledColor": "yellow",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1,
+        6
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "thickness": 1
+    },
+
+
+    {
+      "processName": "Insulating",
+      "drawtype": "Extrusion",
+      "subtype": "Solid",
+      "filledColor": "yellow",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "wirediameter": 2.62,
+      "nowires": 1,
+      "wirelayers": [
+        1
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Insulation - XLPE"
+    },
+
+
+    {
+      "processName": "Insulating",
+      "drawtype": "Extrusion",
+      "subtype": "Compacted",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "wirediameter": 2.62,
+      "nowires": 61,
+      "wirelayers": [
+        1,
+        6,
+        12,
+        18,
+        24
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "thickness": 1
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      "processName": "Laying",
+      "subtype": "Concentric",
+      "insulationType": "filled",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "none",
+          "defaultColor": "Red",
+          "stripeColor": "",
+          "stripeType": ""
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        }
+      ],
+      "thickness": 0.2,
+      "NoofCore": 127,
+      "coreLayers": [
+        1,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42
+      ]
+    },
+
+
+    {
+      "processName": "Laying",
+      "subtype": "Concentric",
+      "insulationType": "filled",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1,
+        6
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "thickness": 0.2,
+      "NoofCore": 3,
+      "coreLayers": [
+        3
+      ]
+    },
+
+
+    {
+      "processName": "Laying",
+      "subtype": "Solid",
+      "insulationColor": [
+        {
+          "stripe": "none",
+          "defaultColor": "Red",
+          "stripeColor": "",
+          "stripeType": ""
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        }
+      ],
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "thickness": 0.2,
+      "coreLayers": [
+        1,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36
+      ]
+    },
+
+
+    {
+      "processName": "Laying",
+      "subtype": "Compacted",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1,
+        6
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "thickness": 1,
+      "coreLayers": [
+        3
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      "processName": "Bedding",
+      "subtype": "Concentric",
+      "insulationType": "filled",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1,
+        6
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "thickness": 0.2,
+      "beddingColor": "black",
+      "beddingThickness": 1,
+      "coreLayers": [
+        3
+      ]
+    },
+
+
+    {
+      "processName": "Bedding",
+      "subtype": "Solid",
+      "insulationType": "filled",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "thickness": 1,
+      "beddingColor": "black",
+      "beddingThickness": 1,
+      "coreLayers": [
+        1,
+        6,
+        12,
+        18
+      ]
+    },
+
+
+    {
+      "processName": "Bedding",
+      "subtype": "Compacted",
+      "insulationType": "filled",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1,
+        6
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "thickness": 1,
+      "beddingColor": "black",
+      "beddingThickness": 1,
+      "coreLayers": [
+        1,
+        6,
+        12,
+        18
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      "processName": "Armouring",
+      "subtype": "Compacted",
+      "insulationType": "filled",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1,
+        6,
+        12
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "thickness": 1,
+      "beddingColor": "black",
+      "beddingThickness": 1,
+      "coreLayers": [
+        1,
+        6,
+        12
+      ],
+      "ArmouringNoofWires": 50,
+      "ArmouringWireDiam": 2,
+      "ArmouringColour": "grey"
+    },
+
+
+    {
+      "processName": "Armouring",
+      "subtype": "Concentric",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1,
+        6,
+        12
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "thickness": 1,
+      "beddingColor": "black",
+      "beddingThickness": 1,
+      "coreLayers": [
+        1,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36
+      ],
+      "ArmouringNoofWires": 75,
+      "ArmouringWireDiam": 3,
+      "ArmouringColour": "grey"
+    },
+
+
+    {
+      "processName": "Armouring",
+      "subtype": "Solid",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "thickness": 1,
+      "beddingColor": "black",
+      "beddingThickness": 1,
+      "coreLayers": [
+        1,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36
+      ],
+      "ArmouringNoofWires": 50,
+      "ArmouringWireDiam": 1.5,
+      "ArmouringColour": "grey"
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      "processName": "Sheathing",
+      "subtype": "Concentric",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1,
+        6,
+        12,
+        18
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "thickness": 1,
+      "beddingColor": "black",
+      "beddingThickness": 1,
+      "coreLayers": [
+        1,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36
+      ],
+      "ArmouringNoofWires": 15,
+      "ArmouringWireDiam": 3,
+      "ArmouringColour": "grey",
+      "SheathingThickness": 2,
+      "SheathingColour": "red"
+    },
+
+
+    {
+      "processName": "Sheathing",
+      "subtype": "Solid",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "thickness": 1,
+      "beddingColor": "black",
+      "beddingThickness": 1,
+      "coreLayers": [
+        1,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36
+      ],
+      "ArmouringNoofWires": 15,
+      "ArmouringWireDiam": 2,
+      "ArmouringColour": "grey",
+      "SheathingThickness": 3,
+      "SheathingColour": "red"
+    },
+
+
+    {
+      "processName": "Sheathing",
+      "subtype": "Compacted",
+      "wirediameter": 2.62,
+      "wirelayers": [
+        1,
+        6,
+        12
+      ],
+      "drawcolour1": "copperGradient",
+      "drawlabel": "Copper wire of 2.62 mm",
+      "insulationColor": [
+        {
+          "stripe": "yes",
+          "defaultColor": "Red",
+          "stripeColor": "green",
+          "stripeType": "stripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "Blue",
+          "stripeColor": "Green",
+          "stripeType": "bistripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "yellow",
+          "stripeColor": "green",
+          "stripeType": "quadstripe"
+        },
+        {
+          "stripe": "yes",
+          "defaultColor": "red",
+          "stripeColor": "green",
+          "stripeType": "tristripe"
+        }
+      ],
+      "thickness": 1,
+      "beddingColor": "black",
+      "beddingThickness": 1,
+      "coreLayers": [
+        1,
+        6,
+        12,
+        18
+      ],
+      "ArmouringNoofWires": 40,
+      "ArmouringWireDiam": 2,
+      "ArmouringColour": "grey",
+      "SheathingThickness": 3,
+      "SheathingColour": "red"
+    }
+  ]
+}

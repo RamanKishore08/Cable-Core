@@ -1,0 +1,16 @@
+d3
+next
+playwright
+puppeteer
+react
+react-dom
+@eslint/eslintrc
+@tailwindcss/postcss
+@types/d3
+@types/node
+@types/react
+@types/react-dom
+eslint
+eslint-config-next
+tailwindcss
+typescript
