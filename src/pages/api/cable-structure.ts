@@ -55,7 +55,7 @@ export default async function handler(
     // await page.goto(url, { waitUntil: "networkidle2" });
 
     await page.goto(url, { waitUntil: "domcontentloaded" });
-    await page.waitForSelector("svg", { timeout: 5000 });
+    await page.waitForSelector("svg", { timeout: 500000 });
 
     const svgContent = await page.evaluate(() => {
       const svg = document.querySelector("svg");
