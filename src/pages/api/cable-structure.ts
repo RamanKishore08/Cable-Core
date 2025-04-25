@@ -23,7 +23,6 @@ export default async function handler(
 
   try {
     const data = req.body;
-    console.log(data);
 
     if (!data || !data.processName) {
       return res
@@ -66,9 +65,10 @@ export default async function handler(
       });
     }
 
-    // ✅ Return SVG string in JSON
-    res.status(200).json({ svg: svgContent });
-    
+    // ✅ Return raw SVG (not escaped)
+    res.setHeader("Content-Type", "text/html");  // Tell the browser it's raw HTML
+    res.status(200).send(svgContent);  // Directly return the SVG as HTML
+
   } catch (err) {
     console.error("Error generating SVG:", err);
     res.status(500).json({ error: "Internal Server Error" });
