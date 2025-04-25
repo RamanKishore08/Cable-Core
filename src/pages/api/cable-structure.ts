@@ -48,7 +48,7 @@ export default async function handler(
     const browser = await getBrowser(); // Reuse the same browser
     const page = await browser.newPage();
 
-    const url = `https://cable-core.onrender.com/svg-render?data=${encodeURIComponent(JSON.stringify(data))}`;
+    const url = `https://cable-core-1.onrender.com/svg-render?data=${encodeURIComponent(JSON.stringify(data))}`;
     await page.goto(url, { waitUntil: "domcontentloaded" });
     await page.waitForSelector("svg", { timeout: 5000 });
 
