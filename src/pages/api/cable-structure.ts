@@ -7,7 +7,7 @@ async function getBrowser() {
   if (!browser) {
     browser = await chromium.launch({
       headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'] // Recommended for cloud environments
+      args: ['--no-sandbox', '--disable-setuid-sandbox'] 
     });
   }
   return browser;
@@ -51,7 +51,7 @@ export default async function handler(
     const page = await context.newPage();
 
     try {
-      const url = `https://cable-core-1.onrender.com/svg-render?data=${encodeURIComponent(JSON.stringify(data))}`;
+      const url = `https://cable-core.onrender.com/svg-render?data=${encodeURIComponent(JSON.stringify(data))}`;
       await page.goto(url, { waitUntil: "domcontentloaded", timeout: 10000 });
       await page.waitForSelector("svg", { timeout: 5000 }); // Wait for SVG to load (5 seconds)
 
@@ -80,4 +80,3 @@ export default async function handler(
     res.status(500).json({ error: "Internal Server Error" });
   }
 }
-
