@@ -1,12 +1,13 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { chromium, Browser } from "playwright";
+import * as puppeteer from "puppeteer";
 
-let browser: Browser | null = null;
+let browser: puppeteer.Browser | null = null;
 
 async function getBrowser() {
   if (!browser) {
-    browser = await chromium.launch({
+    browser = await puppeteer.launch({
       headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
   }
   return browser;
@@ -22,11 +23,12 @@ export default async function handler(
 
   try {
     const data = req.body;
+    console.log(data);
 
     if (!data || !data.processName) {
       return res
         .status(400)
-        .json({ error: "Missing required field: processName" });
+        .json({ error: "Missing required field: processName." });
     }
 
     const validProcesses = [
@@ -38,44 +40,37 @@ export default async function handler(
       "Sheathing",
       "Armouring",
     ];
-
     if (!validProcesses.includes(data.processName)) {
       return res.status(400).json({
         error: `Invalid processName: '${data.processName}'. Expected one of: ${validProcesses.join(", ")}.`,
       });
     }
 
-    const browser = await getBrowser();
-    const context = await browser.newContext();
-    const page = await context.newPage();
+    const browser = await getBrowser(); // Reuse the same browser
+    const page = await browser.newPage();
 
-    try {
-      const url = `https://cablecoreapi.vercel.app/svg-render?data=${encodeURIComponent(JSON.stringify(data))}`;
-      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 10000 });
-      await page.waitForSelector("svg", { timeout: 5000 });
+    const url = `http://localhost:3000/svg-render?data=${encodeURIComponent(JSON.stringify(data))}`;
+    await page.goto(url, { waitUntil: "domcontentloaded" });
+    await page.waitForSelector("svg", { timeout: 5000 });
 
-      const svgContent = await page.evaluate(() => {
-        const svg = document.querySelector("svg");
-        return svg ? svg.outerHTML : null;
+    const svgContent = await page.evaluate(() => {
+      const svg = document.querySelector("svg");
+      return svg ? svg.outerHTML : null;
+    });
+
+    await page.close(); // Close only the page, not the entire browser
+
+    if (!svgContent) {
+      return res.status(500).json({
+        error: `Failed to generate SVG for processName: '${data.processName}'. Make sure the corresponding component exists.`,
       });
-
-      if (!svgContent) {
-        throw new Error("SVG not found");
-      }
-
-      // ✅ Return the SVG string inside a JSON response body
-      res.status(200).json({ svg: svgContent });
-
-    } catch (error) {
-      console.error("Error capturing SVG:", error);
-      res.status(500).json({ error: "Failed to generate SVG" });
-    } finally {
-      await page.close();
-      await context.close();
     }
 
+    // ✅ Return SVG string in JSON
+    res.status(200).json({ svg: svgContent });
+    
   } catch (err) {
-    console.error("Error handling request:", err);
+    console.error("Error generating SVG:", err);
     res.status(500).json({ error: "Internal Server Error" });
   }
 }
