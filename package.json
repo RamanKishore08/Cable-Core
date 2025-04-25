@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postinstall": "npx puppeteer install",
     "start": "next start"
   },
   "dependencies": {
